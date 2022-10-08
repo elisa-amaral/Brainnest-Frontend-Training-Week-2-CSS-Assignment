@@ -1,0 +1,1279 @@
+/* All CSS classes and IDs styling */
+
+/* general use */
+
+.dark-background
+{
+    background: var(--dark-color);
+}
+
+.white-background
+{
+    background: var(--white-color);
+}
+
+.gray-background
+{
+    background: var(--multiple-use-gray-color);
+}
+
+.main-content
+{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.header-spacing,
+.our-services-header-spacing
+{
+    height: 60px;
+    background: var(--dark-color);
+}
+
+/* header (logo + navigation bar)  */
+
+.header
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.header-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.header a 
+{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header h1 a
+{
+    font-size: 24px;
+    color: var(--header-logo-text-color);
+}
+
+.header ul 
+{
+    list-style: none;
+    display: flex;
+}
+
+.header ul li a
+{
+    display: block;
+    font-size: 18px;
+    color: var(--multiple-use-gray-color);
+    padding: 16px;
+    position: relative; /* combined with position abosolute of ::after child */
+}
+
+.header ul li a::after
+{
+    position: absolute;
+    content: '';
+    bottom: 10px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--red-hue-color);
+    transition: all 350ms ease-in-out;
+}
+
+.header ul li a:hover::after
+{
+    width: 50%;
+    left: 25%;
+}
+
+#logo
+{
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img
+{
+    width: 70px;
+    height: 70px;
+}
+
+#logo span
+{    
+    margin-left: 20px;
+}
+
+/* all hero sections styling */
+
+.index-hero-content
+{
+    display: flex;
+    gap: 70px;
+}
+
+.hero-text,
+.app-download-cta
+.index-hero-image
+{
+    flex: 50%;
+}
+
+.hero-text h2
+{   
+    font-size: 48px;
+    font-family: 'Roboto-ExtraBold';
+    color: var(--white-color);
+}
+
+.hero-text p
+{
+    color: var(--multiple-use-gray-color);
+    margin-top: 5px;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.index-hero-section
+{
+    padding: 75px 0;
+}
+
+.index-hero-image img
+{
+    margin-top: 7px;
+    border-radius: 20px;
+}
+
+.our-services-hero-section
+{
+    padding: 120px 0;
+    background: url(../images/our-services/hero-image.png);
+    background-position: top center;
+    background-size: cover;
+    border-bottom: 6px solid var(--dark-color);
+}
+
+.our-services-hero-content
+{
+    background: var(--white-color);
+    padding: 45px 40px;
+    max-width: 700px;
+}
+
+.our-services-hero-content h2
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.our-services-hero-content p
+{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.hero-sign-up-button
+{
+    margin-top: 10px;
+    padding: 7px 30px;
+    font-size: 18px;
+    color: var(--white-color);
+    background: var(--multiple-use-blue-color);
+    border: none;
+    border-radius: 8px;
+}
+
+.hero-sign-up-button:hover
+{
+    color: var(--multiple-use-blue-color);
+    background: var(--white-color);
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+/* information section */
+
+.information-section
+{
+    padding: 50px 0;
+    padding-bottom: 70px;
+}
+
+.information-section h2
+{
+    font-size: 36px;
+    color: var(--dark-color);
+    font-family: 'Roboto-ExtraBold';
+    text-align: center;
+}
+
+.information-content
+{
+    margin-top: 50px;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-item
+{
+    flex-basis: 50px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.information-item p
+{
+    color: var(--gray-hue-color);
+    margin-top: 25px;
+    font-size: 19px;
+    text-align: center;
+    padding: 0px;
+}
+
+.information-item-image
+{
+    width: 100%;
+}
+
+.information-item-image img
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 175px;
+    height: 155px;
+    border: 4px solid var(--multiple-use-blue-color);
+    border-radius: 20px;
+    transition: all 300ms ease-in-out;
+}
+
+.information-item-image img:hover
+{
+    transform: translate(3%, 3%) scale(1.2) rotate(-0.5deg);
+}
+
+
+
+/* quote section */
+
+.quote-section
+{
+    padding: 130px 0;
+    color: var(--dark-color);
+}
+
+.quote-content p
+{
+    font-family: 'Roboto-LightItalic';
+    color: var(--dark-color);
+    font-size: 36px;
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.quote-author
+{
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* call-to-action section */
+
+.call-to-action-section
+{
+    padding: 100px 0;
+}
+
+.call-to-action-content
+{
+    background-color: var(--multiple-use-blue-color);
+    padding: 50px 70px;
+    border-radius: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.call-to-action-text h2,
+.call-to-action-text p
+{
+    color: var(--white-color);
+}
+.call-to-action-text p
+{
+    font-size: 20px;
+}
+
+.call-to-action-text h2
+{
+    margin-bottom: 10px;
+}
+
+.call-to-action-text
+{
+    flex: 40%;
+}
+
+.call-to-action-button
+{
+    margin-top: 28px; /* +10px as in h2 to align */
+    padding: 7px 20px;
+    font-size: 18px;
+    background: var(--multiple-use-blue);
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    border-radius: 8px;
+}
+
+.call-to-action-button:hover
+{
+    color: var(--multiple-use-blue-color);
+    background: var(--white-color);
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+/* international food sections */
+
+.international-food-section
+{
+    padding: 80px 20px;
+}
+
+.international-food-image img
+{
+    border-radius: 30px;
+}
+
+.international-food-content
+{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.international-food-text 
+{
+    padding: 10px;
+    padding-top: 5px;
+}
+
+.international-food-text h2
+{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+.international-food-text p
+{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 0px;
+    text-align: justify;
+    color: var(--multiple-use-daker-gray-color);
+}
+
+.find-restaurants-button
+{
+    color: var(--white-color);
+    background: var(--red-hue-color);
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.find-restaurants-button:hover
+{
+    color: var(--red-hue-color);
+    background: var(--white-color);
+    border: 3px solid var(--red-hue-color);
+    font-weight: 700;
+    transition: 300ms ease-in-out;
+}
+
+/* newsletter section */
+
+.newsletter-section
+{
+    padding: 80px 0;
+    margin-bottom: 20px;
+}
+
+.newsletter-content
+{
+    display: flex;
+    gap: 70px;
+}
+
+.newsletter-cta h2
+{
+    margin-top: 30px;
+    margin-bottom: 10px;;
+    font-size: 27px;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.newsletter-image img
+{
+    max-width: 500px;
+    max-height: 600px;
+    margin-top: 7px;
+}
+
+.newsletter-cta p
+{
+    font-size: 21.5px;
+    text-align: justify;
+    line-height: 1.2;
+    color: var(--multiple-use-daker-gray-color);
+}
+
+.newsletter-cta input
+{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 22px;
+    border: none;
+    background: var(--white-color);
+    border: 2px solid var(--multiple-use-blue-color);
+    border-radius: 20px;
+    padding: 15px 20px;
+    width: 80%;
+    outline: none;
+}
+
+.newsletter-cta input::placeholder
+{
+    color: var(--gray-hue-color)
+}
+
+.newsletter-cta input:focus
+{
+    box-shadow: 0 0 5px 1px var(--multiple-use-blue-color);
+}
+
+.subscribe-button
+{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 22px;
+    background: var(--multiple-use-blue-color);
+    color: var(--white-color);
+    padding: 15px 20px;
+    width: 80%;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: all 300ms ease-in-out;
+}
+
+.subscribe-button:hover
+{
+    background: var(--white-color);
+    color: var(--multiple-use-blue-color);
+    border: 2px solid var(--multiple-use-blue-color);
+}
+
+/* app advantages section */
+
+.app-advantages-section
+{
+    padding: 80px 0;
+    padding-top: 100px;
+}
+
+.app-advantages-section h2
+{
+    font-size: 36px;
+    margin-bottom: 70px;
+    color: var(--white-color);
+    font-family: 'Roboto-ExtraBold';
+    text-align: center;
+}
+
+.app-advantages-content
+{
+    margin-top: 50px;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-advantages-item
+{
+    flex-basis: 50px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.app-advantages-item p
+{
+    color: var(--white-color);
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.app-advantages-item img
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 185px;
+    height: 155px;
+}
+
+/* app download section */
+
+.app-download-section
+{
+    padding: 60px 0;
+}
+
+.app-download-content
+{
+    display: flex;
+    gap: 70px;
+}
+
+.app-download-cta h2
+{   
+    font-size: 38px;
+    text-align: center;
+    font-family: 'Roboto-ExtraBold';
+    color: var(--white-color);
+}
+
+.app-download-cta p
+{
+    color: var(--multiple-use-gray-color);
+    text-align: justify;
+    margin: 20px 0;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
+.app-download-cta
+{
+    margin-top: 115px;
+}
+
+.app-download-image
+{
+   margin-left: 80px;
+}
+
+.app-download-image img
+{
+    max-width: 630px;
+    max-height: 460px;
+    cursor: pointer;
+}
+
+.app-download-buttons-container
+{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -10px; /* aligning */
+}
+
+.app-download-button
+{
+    cursor: pointer;
+    max-width: 300px;
+    max-height: 110px;
+}
+
+/* footer */
+
+.footer
+{
+    padding: 30px 0;
+}
+
+.footer p,
+.footer p a
+{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 23px;
+}
+
+.footer p a
+{
+    color: var(--footer-link-color);
+}
+.footer p a:hover
+{
+    color: var(--footer-link-hover-color);
+    transition: 300ms ease-in-out;
+}
+
+.footer #heart-entity
+{
+    color: var(--red-hue-color);
+    font-size: 25px;
+}
+
+#arrow-entity
+{
+    font-size: 25px;
+    margin-top: -3px;
+}
+
+a.back-to-top-button
+{
+    text-decoration: none;
+}
+
+.back-to-top-button
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--white-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--dark-color);
+    transform: rotate(-93deg);
+    border: 1.5px solid var(--dark-color);
+}
+
+/* responsive design */
+
+@media (max-width: 1090px)
+{   
+
+    /* logo */
+
+    #logo
+    {
+        margin-left: -50px;
+    }
+
+    #logo img 
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* hero sections */
+
+    .hero-text h2
+    {
+        font-size: 30px;
+    }
+
+    .index-hero-content
+    {
+        padding: 50px;
+    }
+
+    .index-hero-image img
+    {
+        width: 450px;
+        height: 380px;
+    }
+
+     /* responsive header (logo + menu) */
+
+     .header-content h1 a
+     {
+         font-size: 34px;
+     }
+ 
+     .header-content ul li a
+     {
+         font-size: 28px;
+     }
+ 
+     .header-spacing,
+     .our-services-header-spacing
+     {
+         height: 0;
+     }
+ 
+     .header
+     {
+         bottom: 0;
+         text-align: center;
+     }
+ 
+     .header-content, 
+     .header-content ul
+     {
+         flex-direction: column;
+         justify-content: center;
+     }
+ 
+     .header-content
+     {
+         height: 100vh;
+     }
+ 
+     .close-header
+     {
+         position: fixed;
+         z-index: 2;
+         top: 0;
+         left: 0;
+     } 
+ 
+     /* hides the header in mobile mode */
+     .header
+     {
+         display: none;
+     }
+ 
+     #close-header-button 
+     {
+         display: none;  /* hidding the checkbox */
+     }
+ 
+     .close-header-label::after
+     {
+         
+         content: '☰';
+         position: fixed;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 2;
+         top: 20px;
+         right: 20px;
+         border-radius: 8px;
+         font-size: 40px;
+         width: 40px;
+         height: 40px;
+         padding: 5px;
+         background: none;
+         color: var(--white-color);
+         background-color: var(--dark-color);
+         text-align: center;
+         cursor: pointer;
+     }
+     
+     /* shows the header after hmaburger icon clicked */
+     .close-header:checked~.header
+     {
+         display: block;
+     }
+     
+     .close-header:checked~.close-header-label::after
+     {
+         content: '×';
+         font-size: 55px;
+     }
+
+     /* information section */
+
+     .information-section
+     {
+        padding: 50px 70px;
+     }
+
+     .information-item p 
+     {
+        margin-top: 28px;
+     }
+
+     .information-section h2
+     {
+       font-size: 30px;
+     }
+
+     .information-item-image img:hover
+     {
+        transform: translate(1%, 2%) scale(1.1) rotate(-0.1deg);
+     }
+
+     /* quote section */
+     
+     .quote-section
+     {
+         padding: 60px;
+     }
+ 
+     .quote-content p
+     {
+         font-size: 30px;
+     }
+ 
+     .quote-author
+     {
+         font-size: 26px;
+     }
+
+    /* call-to-action section */
+
+     .call-to-action-section
+     {
+         padding: 40px 80px;
+     }
+
+     .call-to-action-content
+     {
+        gap: 35px;
+     }
+
+     .call-to-action-text p
+     {
+        text-align: justify;
+        margin-top: 20px;
+     }
+
+     .call-to-action-button
+     {
+        padding: 5px 10px;
+     }
+
+     /* international food section */
+
+    .international-food-content
+    {
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .international-food-text h2
+    {
+        font-size: 27px;
+    }
+
+    .international-food-text p
+    {
+        font-size: 20px;
+        line-height: 1.1;
+        padding-top: 0px;
+        margin-top: 0;
+    }
+
+    .international-food-image img
+    {
+        width: 410px;
+        height: 320px;
+        margin-top: 5px;
+    }
+
+    /* newsletter section */
+
+    .newsletter-section
+    {
+        padding: 40px 70px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-image img
+    {
+        max-width: 350px;
+        max-height: 450px;
+        margin-top: 30px;
+    }
+
+    .newsletter-cta input,
+    .subscribe-button
+    {
+        font-size: 18px;
+    }
+
+    .newsletter-cta h2
+    {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-cta p
+    {
+        font-size: 19px;
+    } 
+
+    /* app advantages section */
+    
+    .app-advantages-section
+    {
+        padding: 40px 70px;
+        padding-top: 120px;
+        padding-bottom: 130px;
+    }
+
+    .app-advantages-section h2
+    {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .app-advantages-content
+    {
+        max-width: 800px;
+    }
+
+    .app-advantages-item img
+    {
+        width: 155px;
+        height: 135px;
+    }
+
+    .app-advantages-item p 
+    {
+        font-size: 18px;
+    }
+
+    /* app download section */
+    
+    .app-download-section
+    {
+        padding: 70px;
+    }
+
+    .app-download-content
+    {
+        gap: 0px;
+    }
+
+    .app-download-image
+    {
+        margin-left: 70px;
+    }
+
+    .app-download-image img
+    {
+        width: 280px;
+        height: 480px;
+    }
+
+    .app-download-cta h2
+    {
+        font-size: 34px;
+    }
+
+    .app-download-cta p
+    {
+        font-size: 22px;
+    }
+
+    .app-download-button
+    {
+        width: 240px;
+        height: 80px;
+    }
+
+}
+
+@media (max-width: 950px)
+{   
+    /* general */ 
+
+    .index-hero-content, .our-services-hero-content,
+    .information-content, .quote-content, .call-to-action-content, .international-food-content, .newsletter-content, .app-advantages-content, .app-download-content
+    {
+        flex-direction: column;
+    }
+    
+    .index-hero-image,
+    .hero-img,
+    .international-food-image,
+    .newsletter-image
+    {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .index-hero-image img,
+    .app-download-image img,
+    .international-food-image img,
+    .newsletter-image img
+    {
+        width: 70%;
+        margin: auto;
+        display: block;
+    }
+
+    /* hamburger icon */
+
+    .close-header-label::after
+    {
+        top: 15px;
+        right: 15px;
+        border-radius: 6px;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    /* hero sections */
+
+    .hero-text h2
+    {
+        font-size: 34px;
+    }
+
+    .index-hero-section
+    {
+        padding: 60px 0;
+    }
+
+    .index-hero-image
+    {
+        margin-top: 0;
+    }
+
+    .index-hero-content
+    {
+        padding: 30px 50px;
+        align-items: center;
+    }
+
+    .our-services-hero-section
+    {
+        padding: 70px 80px;
+        border-bottom: 3px solid var(--dark-color);
+    }
+
+    .our-services-hero-content
+    {
+        padding: 50px 70px;
+    }
+
+    /* information section */
+
+    .information-content
+    {
+        padding-top: 0;
+    }
+
+    .information-section
+    {
+        padding: 50px 0;
+    }
+
+    .information-section h2
+    {
+        font-size: 34px;
+    }
+
+    .information-item
+    {
+        flex-basis: 80px;
+    }
+
+    .information-item:not(:first-of-type)
+    {
+        margin-top: 50px;
+    }
+
+    .information-item p
+    {
+        padding: 0 190px;
+    }
+
+    .information-item img
+    {
+        width: 290px;
+        height: 250px;
+        border: 6px solid var(--multiple-use-blue-color);
+    }
+
+    .information-item p
+    {
+        font-size: 24px;
+    }
+
+    /* quote section */
+
+    .quote-section
+    {
+        padding: 50px;
+    }
+
+    .quote-content p
+    {
+        font-size: 28px;
+    }
+
+    .quote-author
+    {
+        font-size: 24px;
+    }
+
+    /* call-to-action section */
+
+    .call-to-action-section
+    {
+        padding: 70px 80px;
+    }
+
+    .call-to-action-content
+    {
+        padding: 30px 50px;
+        gap: 15px;
+    }
+
+    .call-to-action-button
+    {
+       margin-top: 10px;
+    }
+
+    .call-to-action-text h2
+    {
+        margin-bottom: 30px;
+    }
+
+    .call-to-action-text p
+    {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    /* international food section */
+
+    .international-food-section
+    {
+        padding: 50px 20px;
+    }
+
+    .international-food-text h2
+    {
+        font-size: 27px;
+    }
+
+    .international-food-text p
+    {
+        font-size: 23px;
+        line-height: 1.2;
+    }
+
+    /* newsletter section */
+
+    .newsletter-content
+    {
+        gap: 40px;
+    }
+
+    .newsletter-section
+    {
+        padding: 40px 50px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-image img
+    {
+        max-width: 400px;
+        max-height: 450px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-cta h2
+    {
+       font-size: 28px;
+    }
+
+    .newsletter-cta p
+    {
+        padding: 0 30px;
+        font-size: 24px;
+    }
+    
+    .newsletter-cta input,
+    .subscribe-button
+    {
+        font-size: 22px;
+    }
+
+     /* app advantages section  */
+    
+     .app-advantages-section
+     {
+         padding-top: 70px;
+         padding-bottom: 0;
+     }
+
+     .app-advantages-section h2
+     {
+        font-size: 31px;
+     }
+
+     .app-advantages-item img
+     {
+         width: 195px;
+         height: 175px;
+     }
+
+     .app-advantages-item:not(:first-of-type)
+     {
+        margin-top: 70px;
+     }
+ 
+     .app-advantages-item p 
+     {
+         font-size: 26px;
+         padding: 0px 70px;
+     } 
+ 
+     /* app download section  */
+     
+     .app-download-section
+     {
+         padding: 0 70px;
+         margin-top: -30px;
+     }
+ 
+     .app-download-content
+     {
+         gap: 50px;
+         padding-bottom: 40px;
+     }
+
+     .app-download-image
+     {
+         margin-left: 0;
+     }
+ 
+     .app-download-image img
+     {
+         width: 290px;
+         height: 500px;
+     }
+ 
+     .app-download-cta h2
+     {
+         font-size: 34px;
+     }
+ 
+     .app-download-cta p
+     {
+         font-size: 24px;
+         text-align: center;
+     }
+}

@@ -1,0 +1,15 @@
+/* All CSS variables variables of the project */
+
+:root
+{
+    --dark-color: #1F2937;
+    --header-logo-text-color: #F9FAF8;
+    --multiple-use-blue-color: #3882F6;
+    --multiple-use-gray-color: #E5E7EB;
+    --multiple-use-daker-gray-color: #2e2f32;
+    --white-color: #FFFFFF;
+    --red-hue-color: #dc143c;
+    --gray-hue-color: #808080;
+    --footer-link-hover-color: #20e2f4;
+    --footer-link-color: #1aed64;
+}

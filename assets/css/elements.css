@@ -1,0 +1,46 @@
+/* All CSS element styling  of the project*/
+
+
+/* basic reset */
+*
+{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+@font-face
+{
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Roboto-LightItalic';
+    src: url('../fonts/Roboto-LightItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Roboto-ExtraBold';
+    src: url('../fonts/Roboto-Black.ttf') format('truetype');
+}
+
+body,
+button
+{
+    font-family: 'Roboto-Regular', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
