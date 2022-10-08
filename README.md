@@ -4,7 +4,7 @@ This project is the Week 2 Assignment of Brainnest Front-End Training. I've crea
 
 ## Project Link
 
-**coming soon**
+**https://elisa-amaral.github.io/Brainnest-Front-End-Training-Week-2-CSS-Assignment/**
 
 ## Technology Stack
 
