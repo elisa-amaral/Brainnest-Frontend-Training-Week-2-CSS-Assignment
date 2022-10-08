@@ -23,11 +23,6 @@
     margin: 0 auto;
 }
 
-span.title 
-{
-    display: block;
-}
-
 
 /* header (logo + navigation bar)  */
 
@@ -1556,6 +1551,17 @@ a.back-to-top-button
         padding: 30px 40px;
     }
 
+    .our-services-hero-content h2 
+    {
+        font-size: 18px;
+    }
+
+    .our-services-hero-content p 
+    {
+        font-size: 16px;
+        text-align: left;
+    }
+
     /* international food section */
 
     .international-food-section
@@ -1613,7 +1619,7 @@ a.back-to-top-button
 
     .newsletter-cta input::placeholder
     {
-        font-size: 19px;
+        font-size: 16px;
     }
 
     .newsletter-cta h2
@@ -1626,7 +1632,6 @@ a.back-to-top-button
     {
         font-size: 18px;
     } 
-
 
     /* app download section  */
 
@@ -1667,11 +1672,11 @@ a.back-to-top-button
     .footer p,
     .footer p a
     {
-        font-size: 15px;
+        font-size: 11.5px;
     }
 
     .footer #heart-entity
     {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
