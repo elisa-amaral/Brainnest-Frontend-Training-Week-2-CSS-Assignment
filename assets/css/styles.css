@@ -23,12 +23,6 @@
     margin: 0 auto;
 }
 
-.header-spacing,
-.our-services-header-spacing
-{
-    height: 60px;
-    background: var(--dark-color);
-}
 
 /* header (logo + navigation bar)  */
 
@@ -117,6 +111,12 @@
 
 /* all hero sections styling */
 
+.index-hero-section,
+.our-services-hero-section
+{
+    margin-top: 60px; /* push sections down fixed menu */
+}
+
 .index-hero-content
 {
     display: flex;
@@ -144,6 +144,7 @@
     font-size: 18px;
     padding: 10px 0;
 }
+
 
 .index-hero-section
 {
@@ -900,6 +901,12 @@ a.back-to-top-button
 {
     /* general */ 
 
+    .index-hero-section,
+    .our-services-hero-section
+    {
+         margin-top: 0; /* no need to push the sections down, no fixed menu */
+    }
+
     .index-hero-content, .our-services-hero-content,
     .information-content, .quote-content, .call-to-action-content, .international-food-content, .newsletter-content, .app-advantages-content, .app-download-content
     {
@@ -970,12 +977,6 @@ a.back-to-top-button
     .header-content ul li a
     {
         font-size: 28px;
-    }
-
-    .header-spacing,
-    .our-services-header-spacing
-    {
-        height: 0;
     }
 
     .header
