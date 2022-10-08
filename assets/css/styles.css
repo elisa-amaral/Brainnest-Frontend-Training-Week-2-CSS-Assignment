@@ -237,7 +237,7 @@
 .information-item p
 {
     color: var(--gray-hue-color);
-    margin-top: 25px;
+    margin-top: 15px;
     font-size: 19px;
     text-align: center;
     padding: 0px;
@@ -260,11 +260,11 @@
     transition: all 300ms ease-in-out;
 }
 
-.information-item-image img:hover
+.information-item:hover
 {
-    transform: translate(3%, 3%) scale(1.2) rotate(-0.5deg);
+    transition: 300ms ease-in-out;
+    transform: translate(3%, 3%) scale(1.3) rotate(-0.3deg);
 }
-
 
 
 /* quote section */
@@ -710,7 +710,7 @@ a.back-to-top-button
 
      .information-item p 
      {
-        margin-top: 28px;
+        margin-top: 16px;
      }
 
      .information-section h2
@@ -718,7 +718,7 @@ a.back-to-top-button
        font-size: 30px;
      }
 
-     .information-item-image img:hover
+     .information-item:hover
      {
         transform: translate(1%, 2%) scale(1.1) rotate(-0.1deg);
      }
@@ -1126,7 +1126,7 @@ a.back-to-top-button
 
     .information-item p
     {
-        padding: 0 190px;
+        padding: 0 100px;
     }
 
     .information-item img
@@ -1366,7 +1366,7 @@ a.back-to-top-button
 
     .information-item p
     {
-        margin-top: 20px;
+        margin-top: 13px;
         font-size: 21px;
         padding: 0 90px;
     }
@@ -1502,7 +1502,7 @@ a.back-to-top-button
 
     .information-item p
     {
-        margin-top: 20px;
+        margin-top: 12px;
         font-size: 18px;
         padding: 0 70px;
     }
