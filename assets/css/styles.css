@@ -671,129 +671,35 @@ a.back-to-top-button
 
 /* responsive design */
 
-@media (max-width: 1090px)
+/* large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px)
 {   
-
-    /* logo */
-
-    #logo
+    /* general  */
+    
+    .header-content,
+    .index-hero-content
     {
-        margin-left: -50px;
+        padding: 10px 60px;
     }
 
-    #logo img 
-    {
-        width: 60px;
-        height: 60px;
-    }
-
-    /* hero sections */
+    /* index hero section */
 
     .hero-text h2
     {
         font-size: 30px;
     }
 
-    .index-hero-content
+    .index-hero-image
     {
-        padding: 50px;
+        margin-top: 30px;
     }
 
-    .index-hero-image img
+    .index-hero-image
     {
-        width: 450px;
-        height: 380px;
+        width: 55%;
+        max-width: 55%;
+        max-height: 55%;
     }
-
-     /* responsive header (logo + menu) */
-
-     .header-content h1 a
-     {
-         font-size: 34px;
-     }
- 
-     .header-content ul li a
-     {
-         font-size: 28px;
-     }
- 
-     .header-spacing,
-     .our-services-header-spacing
-     {
-         height: 0;
-     }
- 
-     .header
-     {
-         bottom: 0;
-         text-align: center;
-     }
- 
-     .header-content, 
-     .header-content ul
-     {
-         flex-direction: column;
-         justify-content: center;
-     }
- 
-     .header-content
-     {
-         height: 100vh;
-     }
- 
-     .close-header
-     {
-         position: fixed;
-         z-index: 2;
-         top: 0;
-         left: 0;
-     } 
- 
-     /* hides the header in mobile mode */
-     .header
-     {
-         display: none;
-     }
- 
-     #close-header-button 
-     {
-         display: none;  /* hidding the checkbox */
-     }
- 
-     .close-header-label::after
-     {
-         
-         content: '☰';
-         position: fixed;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         z-index: 2;
-         top: 20px;
-         right: 20px;
-         border-radius: 8px;
-         font-size: 40px;
-         width: 40px;
-         height: 40px;
-         padding: 5px;
-         background: none;
-         color: var(--white-color);
-         background-color: var(--dark-color);
-         text-align: center;
-         cursor: pointer;
-     }
-     
-     /* shows the header after hmaburger icon clicked */
-     .close-header:checked~.header
-     {
-         display: block;
-     }
-     
-     .close-header:checked~.close-header-label::after
-     {
-         content: '×';
-         font-size: 55px;
-     }
 
      /* information section */
 
@@ -861,7 +767,7 @@ a.back-to-top-button
 
     .international-food-content
     {
-        padding: 50px;
+        padding: 10px 50px;
         gap: 20px;
     }
 
@@ -928,8 +834,8 @@ a.back-to-top-button
 
     .app-advantages-section h2
     {
-        font-size: 28px;
         margin-bottom: 20px;
+        font-size: 34px;
     }
 
     .app-advantages-content
@@ -973,7 +879,7 @@ a.back-to-top-button
 
     .app-download-cta h2
     {
-        font-size: 34px;
+        font-size: 36px;
     }
 
     .app-download-cta p
@@ -989,8 +895,9 @@ a.back-to-top-button
 
 }
 
-@media (max-width: 950px)
-{   
+/* medium devices (tablets, less than 992px) */
+@media (max-width: 991px)
+{
     /* general */ 
 
     .index-hero-content, .our-services-hero-content,
@@ -1014,9 +921,133 @@ a.back-to-top-button
     .international-food-image img,
     .newsletter-image img
     {
-        width: 70%;
         margin: auto;
         display: block;
+        flex-basis: 500px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    /* logo */
+
+    #logo
+    {
+        margin-left: -50px;
+    }
+
+    #logo img 
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* hero sections */
+
+    .hero-text h2
+    {
+        font-size: 30px;
+    }
+
+    .index-hero-content
+    {
+        padding: 50px;
+    }
+
+    .index-hero-image img
+    {
+        flex-basis: 450px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    /* responsive header (logo + menu) */
+
+    .header-content h1 a
+    {
+        font-size: 34px;
+    }
+
+    .header-content ul li a
+    {
+        font-size: 28px;
+    }
+
+    .header-spacing,
+    .our-services-header-spacing
+    {
+        height: 0;
+    }
+
+    .header
+    {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .header-content, 
+    .header-content ul
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-content
+    {
+        height: 100vh;
+    }
+
+    .close-header
+    {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    } 
+
+    /* hides the header in mobile mode */
+    .header
+    {
+        display: none;
+    }
+
+    #close-header-button 
+    {
+        display: none;  /* hidding the checkbox */
+    }
+  
+    .close-header-label::after
+    {
+        
+        content: '☰';
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        top: 20px;
+        right: 20px;
+        border-radius: 8px;
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        background: none;
+        color: var(--white-color);
+        background-color: var(--dark-color);
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    /* shows the header after hmaburger icon clicked */
+    .close-header:checked~.header
+    {
+        display: block;
+    }
+    
+    .close-header:checked~.close-header-label::after
+    {
+        content: '×';
+        font-size: 55px;
     }
 
     /* hamburger icon */
@@ -1163,6 +1194,12 @@ a.back-to-top-button
         padding: 50px 20px;
     }
 
+    .international-food-content
+    {
+        padding: 8px 30px;
+        gap: 15px;
+    }
+
     .international-food-text h2
     {
         font-size: 27px;
@@ -1172,6 +1209,13 @@ a.back-to-top-button
     {
         font-size: 23px;
         line-height: 1.2;
+    }
+
+    .international-food-image img 
+    {
+        flex-basis: 300px;
+        flex-grow: 0;
+        flex-shrink: 0;
     }
 
     /* newsletter section */
@@ -1276,4 +1320,352 @@ a.back-to-top-button
          font-size: 24px;
          text-align: center;
      }
+
+     .app-download-buttons-container
+    {
+        justify-content: center;
+        gap: 40px;
+    }
+
+}
+
+ /* small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px)
+{
+
+    /* index hero section */
+
+    .index-hero-section
+    {
+        padding-bottom: 10px;
+    }
+
+    .index-hero-content
+    {
+        gap: 35px;
+    }
+
+    .index-hero-image img
+    {
+        width: 450px;
+        height: 320px;
+    }
+
+    /* information section */
+
+    .information-section h2
+    {
+        font-size: 28px;
+    }
+
+    .information-item img
+    {
+        width: 250px;
+        height: 230px;
+    }
+
+    .information-item p
+    {
+        margin-top: 20px;
+        font-size: 21px;
+        padding: 0 90px;
+    }
+
+    /* quote section */
+
+    .quote-section 
+    {
+        padding: 50px 60px;
+    }
+
+    .quote-content p
+    {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .quote-author
+    {
+        font-size: 19px;
+    }
+
+    /* call-to-action section */
+
+    .call-to-action-content
+    {
+        padding: 25px 40px;
+    }
+
+    .call-to-action-text h2
+    {
+        margin-bottom: 5px;
+        font-size: 23px;
+    }
+
+    .call-to-action-text p 
+    {
+        font-size: 18px;
+    }
+
+    /* app download section  */
+
+    .app-advantages-section h2,
+    .app-download-cta h2
+    {
+        font-size: 28px;
+    }
+
+    .app-advantages-item p 
+    {
+        font-size: 24px;
+    }
+
+    .app-advantages-item img 
+    {
+        width: 185px;
+        height: 165px;
+    }
+
+    .app-download-cta p 
+    {
+        font-size: 22px;
+    }
+
+    .app-download-image img
+    {
+        width: 250px;
+        height: 400px;
+    }
+
+    .app-download-button
+    {
+        max-width: 200px;
+        max-height: 70px;
+    }
+
+    .footer p,
+    .footer p a
+    {
+        font-size: 18px;
+    }
+
+    .footer #heart-entity
+    {
+        font-size: 20px;
+    }
+}
+
+/* extra-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px)
+{
+    /* index hero section */
+
+    .index-hero-section
+    {
+        padding-bottom: 5px;
+    }
+
+    .index-hero-content
+    {
+        gap: 25px;
+    }
+
+    .index-hero-content h2
+    {
+        font-size: 30px;
+    }
+
+    .index-hero-content p
+    {
+        font-size: 16px;
+    }
+
+    .index-hero-image img
+    {
+        width: 300px;
+        height: 190px;
+    }
+
+    /* information section */
+
+    .information-section h2
+    {
+        font-size: 24px;
+    }
+
+    .information-item img
+    {
+        width: 170px;
+        height: 150px;
+        border: 4px solid var(--multiple-use-blue-color);
+    }
+
+    .information-item p
+    {
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 0 70px;
+    }
+
+    /* quote section */
+
+    .quote-section 
+    {
+        padding: 35px 45px;
+    }
+
+    .quote-content p
+    {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .quote-author
+    {
+        font-size: 15px;
+    }
+
+    /* call-to-action section */
+
+    .call-to-action-content
+    {
+        padding: 25px 30px;
+    }
+
+    .call-to-action-text h2
+    {
+        margin-bottom: 2px;
+        font-size: 18px;
+    }
+
+    .call-to-action-text p 
+    {
+        font-size: 16px;
+    }
+
+    /* our-services hero section */ 
+
+    .our-services-hero-content
+    {
+        padding: 30px 40px;
+    }
+
+    /* international food section */
+
+    .international-food-section
+    {
+        padding: 30px 15px;
+    }
+
+    .international-food-content
+    {
+        padding: 8px 30px;
+        gap: 15px;
+    }
+
+    .international-food-text h2
+    {
+        font-size: 25px;
+    }
+
+    .international-food-text p
+    {
+        font-size: 21px;
+        line-height: 1.2;
+    }
+
+    .international-food-image img 
+    {
+        width: 330px;
+        height: 250px;
+    }
+
+    /* newsletter section */
+
+    .newsletter-section
+    {
+        padding: 30px;
+    }
+
+    .newsletter-content
+    {
+        gap: 20px;
+    }
+
+    .newsletter-image img
+    {
+        max-width: 300px;
+        max-height: 400px;
+        margin-top: 10px;
+    }
+
+    .newsletter-cta input,
+    .subscribe-button
+    {
+        font-size: 16px;
+    }
+
+    .newsletter-cta input::placeholder
+    {
+        font-size: 19px;
+    }
+
+    .newsletter-cta h2
+    {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .newsletter-cta p
+    {
+        font-size: 18px;
+    } 
+
+
+    /* app download section  */
+
+    .app-advantages-section h2,
+    .app-download-cta h2
+    {
+        font-size: 18px;
+    }
+
+    .app-advantages-item p 
+    {
+        font-size: 15px;
+    }
+
+    .app-advantages-item img 
+    {
+        width: 155px;
+        height: 135px;
+    }
+
+    .app-download-cta p 
+    {
+        font-size: 18px;
+    }
+
+    .app-download-image img
+    {
+        width: 150px;
+        height: 300px;
+    }
+
+    .app-download-button
+    {
+        max-width: 100px;
+        max-height: 30px;
+    }
+
+    .footer p,
+    .footer p a
+    {
+        font-size: 15px;
+    }
+
+    .footer #heart-entity
+    {
+        font-size: 15px;
+    }
 }
