@@ -23,6 +23,11 @@
     margin: 0 auto;
 }
 
+span.title 
+{
+    display: block;
+}
+
 
 /* header (logo + navigation bar)  */
 
