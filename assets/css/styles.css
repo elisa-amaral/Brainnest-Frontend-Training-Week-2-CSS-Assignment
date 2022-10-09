@@ -1492,6 +1492,7 @@ a.back-to-top-button
     .information-section h2
     {
         font-size: 24px;
+        padding: 0px 40px;
     }
 
     .information-item img
@@ -1635,10 +1636,14 @@ a.back-to-top-button
 
     /* app download section  */
 
-    .app-advantages-section h2,
-    .app-download-cta h2
+    .app-advantages-section h2
     {
         font-size: 18px;
+    }
+
+    .app-download-cta h2
+    {
+        font-size: 24px;
     }
 
     .app-advantages-item p 
@@ -1659,24 +1664,33 @@ a.back-to-top-button
 
     .app-download-image img
     {
-        width: 150px;
+        width: 170px;
         height: 300px;
     }
 
     .app-download-button
     {
-        max-width: 100px;
-        max-height: 30px;
+        max-width: 160px;
+        max-height: 55px;
     }
+
+    /* back-to-top button */
+
+    .back-to-top-button
+    {
+        margin-bottom: 40px;
+    }
+
+    /* footer  */
 
     .footer p,
     .footer p a
     {
-        font-size: 11.5px;
+        font-size: 10px;
     }
 
     .footer #heart-entity
     {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
