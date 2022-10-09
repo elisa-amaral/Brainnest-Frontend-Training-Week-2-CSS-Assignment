@@ -1549,18 +1549,19 @@ a.back-to-top-button
 
     .our-services-hero-content
     {
-        padding: 30px 40px;
+        padding: 20px 30px;
     }
 
     .our-services-hero-content h2 
     {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .our-services-hero-content p 
     {
-        font-size: 16px;
-        text-align: left;
+        font-size: 13px;
+        text-align: justify;
+        line-height: 1.4;
     }
 
     /* international food section */
@@ -1678,7 +1679,7 @@ a.back-to-top-button
 
     .back-to-top-button
     {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
 
     /* footer  */
@@ -1686,11 +1687,11 @@ a.back-to-top-button
     .footer p,
     .footer p a
     {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .footer #heart-entity
     {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
