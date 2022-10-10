@@ -8,5 +8,7 @@ This project is the Week 2 Assignment of the Brainnest Front-End Training. I've 
 
 ## Technology Stack
 
+This project was built with:
+
 + HTML
 + CSS
