@@ -14,7 +14,7 @@ The idea is that 5Kütchen is a food delivery website + mobile app for Berlin (G
 
 ## Screenshot 2: Mobile Menu
 
-![Screenshot](/assets/images/screenshots/Screenshot_2.jpg)
+![Screenshot](/assets/images/screenshots/Screenshot_2.png)
 
 ## Screenshot 3: *Homepage* Dishes Section
 
